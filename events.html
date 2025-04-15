@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #second {
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="special">
+        name:<input id="fullname" type="text"/> <br>
+        <button id="fn">change background</button>
+        
+    </div>
+    <script>
+        //let btn=document.getElementById("b1")
+        let fn=document.getElementById("fullname")
+        //btn.addEventListener('click',change)   //btn means button
+        fn.addEventListener('focus',change)    //fn means focus
+
+        function change(){
+    
+            //console.log(this)
+           // document.body.style.backgroundColor="purple"
+           fn.style.backgroundColor="purple"
+        }
+        
+    </script>
+    
+</body>
+</html>
